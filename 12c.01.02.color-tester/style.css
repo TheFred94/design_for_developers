@@ -4,12 +4,12 @@
 }
 
 :root {
-  --color-primary1: #f4f8f5;
-  --color-primary2: #deede2;
-  --color-secondary1: #393c3a;
-  --color-secondary2: #010b04;
-  --color-accent1: #88fa8d;
-  --color-accent2: #e10c96;
+  --color-primary1: #ffeaf0;
+  --color-primary2: #f9dae2;
+  --color-secondary1: #07474f;
+  --color-secondary2: #dd597c;
+  --color-accent1: #a6153b;
+  --color-accent2: #2cccdf;
   /* Notice you can do this: --color-accent2: var(--color-accent1);*/
 }
 
@@ -164,15 +164,15 @@ section {
 }
 
 #test1 .circle1 {
-  background-color: var(--color-secondary1);
+  background-color: var(--color-accent1);
 }
 
 #test1 .circle2 {
-  background-color: var(--color-primary2);
+  background-color: var(--color-secondary2);
 }
 
 #test1 .box {
-  background-color: var(--color-accent2);
+  background-color: var(--color-secondary1);
 }
 
 #test1 p {
@@ -180,20 +180,20 @@ section {
 }
 
 #test2 {
-  background-color: var(--color-primary2);
+  background-color: var(--color-primary1);
   color: var(--color-secondary2);
 }
 
 #test2 .circle1 {
-  background-color: var(--color-secondary1);
+  background-color: var(--color-accent2);
 }
 
 #test2 .circle2 {
-  background-color: var(--color-primary1);
+  background-color: var(--color-secondary1);
 }
 
 #test2 .box {
-  background-color: var(--color-accent2);
+  background-color: var(--color-secondary2);
 }
 
 #test1 p {
@@ -213,7 +213,7 @@ section {
 }
 
 #test3 .box {
-  background-color: var(--color-accent2);
+  background-color: var(--color-primary1);
 }
 
 #test3 p {
