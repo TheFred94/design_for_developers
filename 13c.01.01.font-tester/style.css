@@ -37,37 +37,37 @@ html {
   font-size: 18px;
 }
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: BebasNeue-Regular;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: SofiaSansSemiCondensed-ExtraBold;
 }
 
 h3 {
   font-family: SofiaSansSemiCondensed-BoldItalic;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h4 {
   font-family: SofiaSansSemiCondensed-Regular;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 p {
   font-family: SofiaSansSemiCondensed-Medium;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 p.small {
   font-family: SofiaSansSemiCondensed-Medium;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 header {
-  padding: 2rem;
+  padding: 6rem;
 }
 
 section {
