@@ -8,6 +8,10 @@
   --font-paragraph: sans-serif;
 }
 
+body {
+  background-color: var(--white);
+}
+
 @font-face {
   font-family: BebasNeue-Regular;
   src: url(BebasNeue-Regular.ttf);
@@ -34,8 +38,13 @@
 }
 
 html {
-  font-size: 18px;
+  --x-stra_white: #f2f2f2;
+  --white: #f3f6fe;
+  --black: #393e40;
+  --red: #f26b83;
+  --blue: #1872e7;
 }
+
 h1 {
   font-size: 6rem;
   font-family: BebasNeue-Regular;
@@ -56,12 +65,21 @@ h4 {
   font-size: 2rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
 p {
+  color: var(--black);
   font-family: SofiaSansSemiCondensed-Medium;
   font-size: 1.5rem;
 }
 
 p.small {
+  color: var(--black);
   font-family: SofiaSansSemiCondensed-Medium;
   font-size: 1rem;
 }
@@ -90,11 +108,16 @@ section {
   display: inline;
 }
 
+.p_emphasize {
+  color: var(--white);
+}
+
 .display {
   font-family: SofiaSansSemiCondensed-ExtraBold;
 }
 
 .paragraph {
+  color: var(--blue);
   font-family: SofiaSansSemiCondensed-BoldItalic;
 }
 
@@ -104,4 +127,30 @@ section {
 
 .space {
   height: 4rem;
+}
+
+.card_1,
+.card_2,
+.card_3 {
+  background-color: #f7f7fa;
+  box-shadow: 10px 5px 10px #8888884a;
+  border-radius: 10px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+.card_1 > h2 {
+  color: var(--red);
+}
+
+.single_word {
+  font-family: SofiaSansSemiCondensed-BoldItalic;
+  color: var(--blue);
+}
+
+.paragraph_block {
+  border-radius: 10px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: var(--red);
 }
