@@ -51,6 +51,7 @@ html {
 }
 
 h1 {
+  height: 10rem;
   font-size: 10rem;
   font-family: BebasNeue-Regular;
 }
@@ -98,9 +99,16 @@ section {
   padding: 0rem 2rem;
 }
 
-#samples > h1 {
-  text-decoration: underline;
-  text-decoration-color: var(--blue);
+.underline {
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  height: 7px;
+  background-color: var(--blue);
+  border-radius: 5px;
+  display: block;
 }
 
 .one_two_grid {
@@ -116,7 +124,7 @@ section {
 }
 
 .inline {
-  display: inline;
+  display: inline-block;
 }
 
 .p_emphasize {
