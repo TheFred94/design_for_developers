@@ -180,7 +180,7 @@ section {
 }
 
 #test2 {
-  background-color: var(--color-primary1);
+  background-color: var(--color-primary2);
   color: var(--color-secondary2);
 }
 
@@ -197,6 +197,9 @@ section {
 }
 
 #test1 p {
+  color: var(--color-secondary1);
+}
+#test2 p {
   color: var(--color-secondary1);
 }
 
@@ -225,7 +228,7 @@ section {
 }
 
 #test4 .circle1 {
-  background-color: var(--color-primary2);
+  background-color: var(--color-primary1);
 }
 
 #test4 .circle2 {
@@ -233,7 +236,7 @@ section {
 }
 
 #test4 .box {
-  background-color: var(--color-accent1);
+  background-color: var(--color-primary2);
 }
 
 #test4 p {
