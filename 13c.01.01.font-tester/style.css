@@ -1,76 +1,107 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-    --font-display: serif;
-    --font-paragraph: sans-serif;
+  --font-display: serif;
+  --font-paragraph: sans-serif;
+}
+
+@font-face {
+  font-family: BebasNeue-Regular;
+  src: url(BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: SofiaSansSemiCondensed-BoldItalic;
+  src: url(Sofia_Sans_Semi_Condensed/static/SofiaSansSemiCondensed-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: SofiaSansSemiCondensed-ExtraBold;
+  src: url(Sofia_Sans_Semi_Condensed/static/SofiaSansSemiCondensed-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: SofiaSansSemiCondensed-Medium;
+  src: url(Sofia_Sans_Semi_Condensed/static/SofiaSansSemiCondensed-Medium.ttf);
+}
+
+@font-face {
+  font-family: SofiaSansSemiCondensed-Regular;
+  src: url(Sofia_Sans_Semi_Condensed/static/SofiaSansSemiCondensed-Regular.ttf);
 }
 
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
-
-h1, h2, h3, h4 {
-    font-family: var(--font-display);
-}
-
 h1 {
+  font-size: 8rem;
+  font-family: BebasNeue-Regular;
 }
 
 h2 {
+  font-size: 3rem;
+  font-family: SofiaSansSemiCondensed-ExtraBold;
 }
 
 h3 {
+  font-family: SofiaSansSemiCondensed-BoldItalic;
+  font-size: 2rem;
 }
 
 h4 {
+  font-family: SofiaSansSemiCondensed-Regular;
+  font-size: 1.5rem;
 }
 
 p {
-    font-family: var(--font-paragraph);
+  font-family: SofiaSansSemiCondensed-Medium;
+  font-size: 1.2rem;
 }
 
 p.small {
+  font-family: SofiaSansSemiCondensed-Medium;
+  font-size: 1.2rem;
 }
 
 header {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 section {
-    padding: 0rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .one_two_grid {
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 2fr;
 }
 
 .one_one_one_grid {
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .inline {
-    display:inline;
+  display: inline;
 }
 
-.display { 
-    font-family: var(--font-display);
+.display {
+  font-family: SofiaSansSemiCondensed-ExtraBold;
 }
 
 .paragraph {
-    font-family: var(--font-paragraph);
+  font-family: SofiaSansSemiCondensed-BoldItalic;
 }
 
 .small_space {
-    height: 2rem; 
+  height: 2rem;
 }
 
 .space {
-    height: 4rem;
+  height: 4rem;
 }
