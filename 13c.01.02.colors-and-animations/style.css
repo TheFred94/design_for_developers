@@ -9,24 +9,30 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
+  --orange: #fd9010;
+  --dark-green: #0a3b44;
+  --light-green: #60919d;
+  --white: #f9fafa;
+  --black: #1e1e1e;
+  --grey: #d9d9d9;
 }
 
 h1,
 h2,
 h3 {
-  color: #111;
   font-family: "Noto Serif Display", serif;
   margin-bottom: 1rem;
 }
 
 h1 {
-  color: #eee;
+  color: var(--dark-green);
   font-size: 3.052rem;
   line-height: 3.5rem;
   margin-bottom: 2rem;
 }
 
 h2 {
+  color: var(--dark-green);
   font-size: 1.953rem;
   line-height: 2rem;
   margin-bottom: 2rem;
@@ -40,7 +46,7 @@ h3 {
 }
 
 p {
-  color: #222;
+  color: var(--dark-green);
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -49,7 +55,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #222;
+  color: var(--dark-green);
 }
 
 a:hover {
@@ -65,12 +71,13 @@ button {
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  background-color: #222;
-  color: #eee;
+  background-color: var(--orange);
+  color: var(--dark-green);
 }
 
 .dark_button {
-  background-color: #000;
+  color: var(--dark-green);
+  background-color: var(--orange);
 }
 
 input[type="text"] {
@@ -91,7 +98,7 @@ nav {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: var(--black);
 }
 
 nav a {
@@ -118,11 +125,11 @@ header {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #222;
+  background-color: var(--light-green);
 }
 
 header p {
-  color: #ddd;
+  color: var(--white);
 }
 
 header button {
@@ -140,11 +147,12 @@ header button {
   min-width: 250px;
   min-height: 250px;
   border-radius: 250px;
-  background-color: #111;
+  background-color: var(--dark-green);
+  color: var(--white);
   margin-bottom: 1rem;
   padding: 3rem;
 }
-.header_graphics object{
+.header_graphics object {
   width: 100%;
   height: 100%;
 }
@@ -156,7 +164,7 @@ header button {
 /* product section */
 #product {
   padding: 5rem 3rem;
-  background-color: #ddd;
+  background-color: var(--dark-green);
 }
 
 #product h2 {
@@ -178,11 +186,18 @@ header button {
 }
 
 .product_text {
+  color: var(--white);
   width: 50vw;
   min-width: 300px;
 }
 
+.product_text > h2,
+.product_text > p {
+  color: var(--white);
+}
+
 #product article:first-child .product_text {
+  color: var(--white);
   width: 75vw;
   min-width: 300px;
 }
@@ -194,16 +209,18 @@ header button {
   min-height: 150px;
   padding: 1rem;
   margin: 3rem;
-  background-color: #ccc;
+  background-color: var(--light-green);
+  color: var(--white);
   border-radius: 300px;
 }
-.product_graphics object{
+.product_graphics object {
   width: 100%;
   height: 100%;
 }
 
 /* highlight sections */
 .highlight {
+  background-color: var(--orange);
   display: flex;
   min-height: 70vh;
   padding: 2rem;
@@ -239,7 +256,7 @@ header button {
   padding: 2rem;
   align-items: center;
   justify-content: space-around;
-  background-color: #ccc;
+  background-color: var(--grey);
 }
 
 #request div {
@@ -254,8 +271,8 @@ footer {
   align-items: top;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #111;
-  color: #ddd;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 footer h2,
@@ -294,5 +311,4 @@ footer section div {
     font-size: 3.052rem;
     line-height: 3.5rem;
   }
-
 }
