@@ -25,5 +25,11 @@ function ballClicked() {
   // pause falling animation
   animation.pause();
   // start zoom-animation
+  const zoomAnimation = ball.animate(zoom, properties);
+
   ball.animate(zoom, properties);
+
+  zoomAnimation.onfinish = (event) => {
+    animation.play();
+  };
 }
