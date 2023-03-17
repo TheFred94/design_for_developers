@@ -78,9 +78,6 @@ button {
   color: var(--color-lighter);
 }
 
-.card_button_negative {
-  margin-block-end: 1rem;
-}
 .card_button_negative,
 .card_button_positive {
   font-family: "Josefin Sans";
@@ -91,6 +88,14 @@ button {
   width: 100px;
   color: var(--color-lighter);
   background-color: var(--color-dark);
+  transition: 0.3s;
+}
+.card_button_negative:hover,
+.card_button_positive:hover {
+  cursor: pointer;
+  color: var(--color-dark);
+  background-color: var(--color-lighter);
+  transition: 0.3s;
 }
 
 .card_mail {
@@ -201,12 +206,28 @@ header {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  padding: 50px 30px 50px 30px;
+  padding: 50px 30px 30px 30px;
   border-radius: 10px;
   background-color: var(--color-light);
   text-align: center;
+  transition: 0.3s;
 }
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 3px 7px 7px #8888;
+  transition: 0.3s;
+  transform: scale(0.99);
+}
+
+.card:hover > img {
+  transition: 0.3s;
+  transform: scale(1.02);
+  box-shadow: none;
+}
+
 .card img {
+  transition: 0.3s;
   max-width: 280px;
   width: 28vw;
   height: 300px;
@@ -218,7 +239,7 @@ header {
   margin: -100px 0 30px 0;
   width: 100%;
   max-width: 1000px;
-  box-shadow: 10px 15px 15px #8888;
+  box-shadow: 3px 7px 7px #8888;
 }
 
 .card_title {
