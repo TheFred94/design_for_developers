@@ -223,7 +223,20 @@ header {
 .card:hover > img {
   transition: 0.3s;
   transform: scale(1.02);
-  box-shadow: none;
+  box-shadow: 1px 4px 4px #8888;
+  animation: 2s infinite alternate float;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 7px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .card img {
@@ -235,7 +248,6 @@ header {
   margin-left: -60px;
   margin-right: 30px;
   border-radius: inherit;
-  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
   margin: -100px 0 30px 0;
   width: 100%;
   max-width: 1000px;
