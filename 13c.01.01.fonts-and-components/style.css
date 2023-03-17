@@ -220,10 +220,14 @@ header {
   transform: scale(0.99);
 }
 
+.card:hover > .buttons > input {
+  box-shadow: 3px 7px 7px #8888;
+}
+
 .card:hover > img {
   transition: 0.3s;
   transform: scale(1.02);
-  box-shadow: 1px 4px 4px #8888;
+  box-shadow: 5px 8px 8px #8888;
   animation: 2s infinite alternate float;
 }
 
