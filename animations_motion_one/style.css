@@ -1,0 +1,16 @@
+body {
+  background-color: blueviolet;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: blanchedalmond;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
