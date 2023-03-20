@@ -2,9 +2,8 @@
 import { animate, timeline } from "https://cdn.skypack.dev/motion";
 
 const sequence = [
-  [".ball", { x: 400, rotate: 200 }, { duration: 2 }],
-  [".ball", { scale: 0 }, { duration: 1 }],
-  [".ball", { scale: 1, x: 1300, y: -1000 }, { duration: 2 }],
+  [".ball", { x: 400, rotate: 200 }, { duration: 1 }, { easing: "ease-in" }],
+  [".ball", { rotate: 1000, scale: 0, x: 1300, y: -1000 }, { duration: 3 }, { easing: "ease-in" }],
 ];
 
 timeline(sequence);
