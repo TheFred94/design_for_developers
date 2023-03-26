@@ -129,7 +129,7 @@ header {
 }
 
 header p {
-  color: var(--white);
+  color: var(--grey);
 }
 
 header button {
@@ -193,7 +193,7 @@ header button {
 
 .product_text > h2,
 .product_text > p {
-  color: var(--white);
+  color: var(--grey);
 }
 
 #product article:first-child .product_text {
