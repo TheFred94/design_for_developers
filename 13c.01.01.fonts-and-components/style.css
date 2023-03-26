@@ -208,7 +208,7 @@ header {
   width: 80%;
   padding: 50px 30px 30px 30px;
   border-radius: 10px;
-  background-color: var(--color-light);
+  background-color: rgb(249, 249, 249);
   text-align: center;
   transition: 0.3s;
 }
@@ -259,13 +259,17 @@ header {
 }
 
 .card_title {
-  padding-block: 1.5rem;
+  padding-bottom: 0.5rem;
   font-style: italic;
   font-weight: 300;
 }
 
 .card_name {
-  padding-block-end: 1rem;
+  padding-block-end: 0.5rem;
+}
+
+.card_slogan {
+  padding-block: 1rem;
 }
 
 #card_container {
