@@ -1,1 +1,375 @@
-/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  --orange: #fd9010;
+  --dark-green: #0a3b44;
+  --light-green: #60919d;
+  --white: #f9fafa;
+  --black: #1e1e1e;
+  --grey: #d9d9d9;
+}
+
+/* CSS code */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--dark-green);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+
+nav button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 0.8em 1em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: var(--light-green);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+header button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 0.8em 1em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.advantages_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+}
+
+.advantages_card {
+  background-color: var(--white);
+  width: 300px;
+  margin: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.advantages_card_graphics {
+  height: 150px;
+  background-color: var(--grey);
+}
+
+.advantages_card_text {
+  padding: 1em;
+  text-align: center;
+}
+
+.advantages_card h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.advantages_card p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#product {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#product h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.product_graphics {
+  background-image: url("https://dummyimage.com/500x500/ccc/fff");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.product_text {
+  width: 50%;
+}
+
+.product_text article {
+  margin-bottom: 40px;
+}
+
+.product_text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product_text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: #f6f6f6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.highlight h2 {
+  font-size: 32px;
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.highlight_small_cards div {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.highlight_small_cards h3 {
+  color: #2e2e2e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.highlight_small_cards p {
+  color: #7a7a7a;
+  font-size: 16px;
+  margin: 0;
+}
+
+button[type="button"] {
+  background-color: #ffad00;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 40px;
+  transition: background-color 0.2s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #e0a100;
+}
+
+#team {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#team h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.team_graphics {
+  background-image: url("path/to/team-image.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+
+.team_text {
+  width: 50%;
+  float: right;
+  padding: 0 30px;
+}
+
+.team_text h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.team_text ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.team_text ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.team_text a {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.team_text a:hover {
+  background-color: #666;
+}
+
+/* Styling for Meet the Team section */
+#team {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.team_graphics {
+  background-image: url("path/to/image");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 50%;
+  float: left;
+}
+
+.team_text {
+  padding: 0 20px;
+  width: 50%;
+  float: right;
+}
+
+/* Styling for Contact section */
+#contact {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Styling for Footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div {
+  flex-basis: 30%;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
